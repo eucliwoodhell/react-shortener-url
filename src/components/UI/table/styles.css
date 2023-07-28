@@ -1,0 +1,28 @@
+.paginationBttns {
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    column-gap: 0.5rem;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.paginationBttns a {
+    padding: 5px 13px;
+    background: #212245;
+    color: #fff !important;
+    border-radius: 5px;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.paginationBttns a:hover {
+    background: #fcfcfc;
+    color: #212245 !important;
+}

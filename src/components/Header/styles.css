@@ -1,0 +1,38 @@
+.header {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background-color: #fff159;
+  border-bottom: 1px solid #fcfcfc;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo h5 {
+  font-weight: 600;
+  font-size: 5.25rem;
+  color: #212245;
+  margin-top: -3px;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .logo h5 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+  }
+
+  .logo {
+    margin-top: 18px;
+  }
+}

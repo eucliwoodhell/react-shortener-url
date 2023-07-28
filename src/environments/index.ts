@@ -1,0 +1,24 @@
+import { Dev } from "./environment.dev";
+import { Prod } from "./environment.prod";
+
+export enum Environment {
+  Development = "dev",
+  Production = "prod",
+}
+
+let config;
+const ENVIRONMENT = process.env.REACT_APP_ENV;
+switch (ENVIRONMENT) {
+  case Environment.Development:
+    config = Dev;
+    break;
+  case Environment.Production:
+    config = Prod;
+    break;
+  default:
+    console.error(`Unknown environment: ${ENVIRONMENT}`);
+}
+
+const environment = config;
+
+export default environment;
