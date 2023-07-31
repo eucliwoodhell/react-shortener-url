@@ -1,4 +1,5 @@
 import { Dev } from "./environment.dev";
+import { Local } from "./environment.local";
 import { Prod } from "./environment.prod";
 
 export enum Environment {
@@ -16,7 +17,7 @@ switch (ENVIRONMENT) {
     config = Prod;
     break;
   default:
-    console.error(`Unknown environment: ${ENVIRONMENT}`);
+    config = Local;
 }
 
 const environment = config;

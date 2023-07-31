@@ -30,7 +30,8 @@
     "start:dev": "REACT_APP_ENV=dev react-scripts start",
     "start:prod": "REACT_APP_ENV=prod react-scripts start",
     "start:wind": "set REACT_APP_ENV=dev && react-scripts start",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx src"
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
+    "test-ct": "playwright test -c playwright-ct.config.ts"
   },
   "eslintConfig": {
     "extends": [
@@ -51,6 +52,7 @@
     ]
   },
   "devDependencies": {
+    "@playwright/experimental-ct-react": "^1.36.2",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "eslint": "^8.45.0",
     "eslint-config-standard-with-typescript": "^37.0.0",

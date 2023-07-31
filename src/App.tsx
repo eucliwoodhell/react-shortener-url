@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Redirect from "./pages/Redirect";
 
-function App() {
+function App(): React.ReactElement {
   return (
     <React.Fragment>
       <Layout>

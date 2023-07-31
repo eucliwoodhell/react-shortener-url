@@ -53,6 +53,7 @@ const Home = () => {
               <Col lg={12}>
                 <InputGroup>
                   <Input
+                    id="url"
                     type="text"
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
