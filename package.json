@@ -31,7 +31,8 @@
     "start:prod": "REACT_APP_ENV=prod react-scripts start",
     "start:wind": "set REACT_APP_ENV=dev && react-scripts start",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
-    "test-ct": "playwright test -c playwright-ct.config.ts"
+    "test-ct": "playwright test -c playwright-ct.config.ts",
+    "start": "react-scripts start"
   },
   "eslintConfig": {
     "extends": [
