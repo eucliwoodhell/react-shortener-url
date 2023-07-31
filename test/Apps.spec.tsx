@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/experimental-ct-react";
 
 test.beforeEach(async ({ page }) => {
-  await page.goto("http://localhost:3001/");
+  await page.goto("http://localhost:3000/");
 });
 
 test.describe("Home suite", () => {
