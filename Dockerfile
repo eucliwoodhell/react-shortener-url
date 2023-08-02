@@ -1,10 +1,12 @@
 FROM node:18-buster-slim
 WORKDIR /app
 
-ADD package.json /app/package.json
-ADD dist /app
-ADD node_modules /app/node_modules
-ADD entrypoint.sh /app/entrypoint.sh
+COPY . /app
+RUN npm ci
+RUN npm run build
+RUN chmod +x /app/entrypoint.sh
+
+ENV REACT_APP_ENV=dev
 
 EXPOSE 3000
 ENTRYPOINT ["/app/entrypoint.sh"]
